@@ -1,10 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 
 require('pdfjs-dist/web/compatibility');
-require('pdfjs-dist/build/pdf');
-PDFJS.workerSrc = require('pdfjs-dist/build/pdf.worker.js');
-
-PDFJS.disableWorker = true;
+require('pdfjs-dist/build/pdf.combined');
 
 export default class ReactPDF extends Component {
   state = {
